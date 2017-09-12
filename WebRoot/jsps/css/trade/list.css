@@ -1,0 +1,80 @@
+table {
+	font-size: 10pt;
+}
+
+td {
+	padding-left: 5px;
+}
+
+body {
+	font-size: 10pt;
+	color: #404040;
+}
+
+.pLink {
+	margin-top:50px;
+	margin-bottom:50px;
+	margin-left:750px;
+	
+}
+
+.divMain {
+	width: 100%;
+}
+
+.divTitle {
+	border: 1px solid #d0d0d0;
+	background: url(/BookStore/images/bg_btns.png) repeat-x;
+	background-position: 0 -132px;
+	height: 30px;
+	width: 100%;
+	line-height: 30px;
+}
+
+.price_t {
+	color: #c30;
+	font-weight: bold;
+	padding-right: 10px;
+	font-family: Arial;
+	font-size: 10pt;
+}
+
+.tt {
+	background-color: #efeae5;
+	height: 25px;
+	font-family: Arial;
+	color: #878787;
+}
+
+tr{
+	width:100%;
+}
+
+a:not(.webName):not(.topa) {
+	text-decoration: none;
+	color: #018BD3;
+}
+
+a:not(.webName):not(.topa):visited {
+	color: #018BD3;
+}
+
+a:not(.webName):not(.topa):hover {
+	color: #FF6600;
+	text-decoration: underline;
+}
+
+a.link2 {
+	border: 1px solid #ffffff;
+	display: inline-block;
+}
+
+a.link2:HOVER {
+	border: 1px solid #d0d0d0;
+	display: inline-block;
+}
+
+a.link2:active {
+	border: 1px dotted #404040;
+	display: inline-block;
+}

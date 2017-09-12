@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>美化的网页对话框-网页弹出框</title>
+<link rel="stylesheet" type="text/css" href="css/alert.css" />
+<style type="text/css">
+.demo{width:400px; margin:20px auto}
+.demo h3{line-height:24px}
+.demo p{line-height:20px}
+</style>
+</head>
+
+<body>
+
+<div id="main">
+  <div class="demo">
+     <h3>1、警告框</h3>
+     <p><a href="#" id="a1">点击这里</a></p>
+  </div>
+  <div class="demo">
+     <h3>2、确认框</h3>
+     <p><a href="#" id="a2">点击这里</a></p>
+  </div>
+  <div class="demo">
+     <h3>3、输入框</h3>
+     <p><a href="#" id="a3">点击这里</a></p>
+  </div>
+  <div class="demo">
+     <h3>4、网页框</h3>
+     <p><a href="#" id="a4">点击这里</a></p>
+  </div>
+  <div class="demo">
+     <h3>5、提示条</h3>
+     <p><a href="#" id="a5">点击这里</a></p>
+  </div>
+</div>
+<div id="showbox" style="display:none">
+   <h3>这是一段测试用的文字</h3>
+   <p>我们热爱WEB设计与开发，我们关注用户体验和网站的可用性，并遵循WEB标准，我们以推动规范设计为己任，我们致力于WEB前端技术在中国的应用，我们为用户提供优质高效的网站设计。</p>
+   <p style="text-align:right"><a href="#" class="a_close">关闭</a></p>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type='text/javascript' src='js/jquery-ui.min.js'></script>
+<script type="text/javascript" src="js/jquery.alert.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#a1").click(function(){
+		hiAlert("欢迎来到www.17sucai.com","提示");
+	});
+	$("#a2").click(function(){
+		hiConfirm('你确认此操作吗?', '确认框', function(r) {
+          if(r){
+				 hiOverAlert('你的反馈是: ' + r);
+			  }else{
+				 hiOverAlert('你的反馈是: ' + r);
+			 }
+
+
+        });
+	});
+	$("#a3").click(function(){
+		hiPrompt('请填写:', '默认值', '输入框', function(r) {
+			if( r ) hiOverAlert('你填入的内容是"' + r+'"');
+		});
+	});
+	$("#a4").click(function(){
+		hiBox('#showbox', '标题',400,'','','.a_close');
+	});
+	$("#a5").click(function(){
+		hiOverAlert('操作提示条信息',1500);
+	});
+});
+</script>

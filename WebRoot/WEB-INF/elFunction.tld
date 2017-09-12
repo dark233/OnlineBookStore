@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+  version="2.0">
+  <tlib-version>1.1</tlib-version>
+  <short-name>fn</short-name>
+  <uri>http://www.taunton.com/jstl/myElFunction</uri>
+  <function>
+    <name>comparedate</name>
+    <function-class>com.taunton.el.elfunctions.CompareToDate</function-class>
+    <function-signature>java.lang.Boolean compareDate(java.lang.String,java.lang.String)</function-signature>
+  </function>
+  <function>
+    <name>getcurrtime</name>
+    <function-class>com.taunton.el.elfunctions.GetCurrTime</function-class>
+    <function-signature>java.lang.String getCurrTime(java.lang.String)</function-signature>
+  </function>
+  
+  
+ </taglib>

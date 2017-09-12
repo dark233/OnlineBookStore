@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>BookStore</display-name>
+  
+  <listener>
+  	<listener-class>com.taunton.listener.ServletContextListener4ScheduEx</listener-class>
+  </listener>
+  
+  <servlet>
+  	<servlet-name>BackStageUserServlet</servlet-name>
+  	<servlet-class>com.taunton.backstage.servlet.BackStageUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>BackStageBookServlet</servlet-name>
+  	<servlet-class>com.taunton.backstage.servlet.BookServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>BackStagePutAwayBookServlet</servlet-name>
+  	<servlet-class>com.taunton.backstage.servlet.PutAwayBookServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>BackStageCategoryServlet</servlet-name>
+  	<servlet-class>com.taunton.backstage.servlet.CategoryServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>BackStageHandleServlet</servlet-name>
+  	<servlet-class>com.taunton.backstage.servlet.HandleServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>BackStageTradeServlet</servlet-name>
+  	<servlet-class>com.taunton.backstage.servlet.TradeServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>BackStage_UserServlet</servlet-name>
+  	<servlet-class>com.taunton.backstage.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TestServlet</servlet-name>
+    <servlet-class>com.taunton.servlet.TestServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BaseServlet</servlet-name>
+    <servlet-class>com.taunton.servlet.BaseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BookServlet</servlet-name>
+    <servlet-class>com.taunton.servlet.BookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.taunton.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShoppingCartServlet</servlet-name>
+    <servlet-class>com.taunton.servlet.ShoppingCartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TradeServlet</servlet-name>
+    <servlet-class>com.taunton.servlet.TradeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CategoryServlet</servlet-name>
+    <servlet-class>com.taunton.servlet.CategoryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RemarkServlet</servlet-name>
+    <servlet-class>com.taunton.servlet.RemarkServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShippingAddressServlet</servlet-name>
+    <servlet-class>com.taunton.servlet.ShippingAddressServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetImage</servlet-name>
+    <servlet-class>com.taunton.image.GetImage</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SendRegistSMS</servlet-name>
+    <servlet-class>com.taunton.sms.SendRegistSMS</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>BackStageUserServlet</servlet-name>
+    <url-pattern>/backstage/BackStageUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BackStageBookServlet</servlet-name>
+    <url-pattern>/backstage/BookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BackStagePutAwayBookServlet</servlet-name>
+    <url-pattern>/backstage/PutAwayBookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BackStageCategoryServlet</servlet-name>
+    <url-pattern>/backstage/CategoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BackStageHandleServlet</servlet-name>
+    <url-pattern>/backstage/HandleServlet</url-pattern>
+  </servlet-mapping>  
+  <servlet-mapping>
+    <servlet-name>BackStageTradeServlet</servlet-name>
+    <url-pattern>/backstage/TradeServlet</url-pattern>
+  </servlet-mapping>   
+  <servlet-mapping>
+    <servlet-name>BackStage_UserServlet</servlet-name>
+    <url-pattern>/backstage/UserServlet</url-pattern>
+  </servlet-mapping> 
+  <servlet-mapping>
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/TestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BaseServlet</servlet-name>
+    <url-pattern>/BaseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BookServlet</servlet-name>
+    <url-pattern>/BookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShoppingCartServlet</servlet-name>
+    <url-pattern>/ShoppingCartServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TradeServlet</servlet-name>
+    <url-pattern>/TradeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CategoryServlet</servlet-name>
+    <url-pattern>/CategoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RemarkServlet</servlet-name>
+    <url-pattern>/RemarkServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShippingAddressServlet</servlet-name>
+    <url-pattern>/ShippingAddressServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetImage</servlet-name>
+    <url-pattern>/GetImage</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>SendRegistSMS</servlet-name>
+    <url-pattern>/SendRegistSMS</url-pattern>
+  </servlet-mapping>
+  
+  
+    <!-- 乱码过滤器 -->
+  <filter>
+	  <filter-name>EncodingFilter</filter-name>
+	 <filter-class>com.taunton.filter.EncodingFilter</filter-class>
+  </filter>
+  
+ <!--准备结算页面过滤器  -->
+  <filter>
+  	<filter-name>ShowItemFilter</filter-name>
+  	<filter-class>com.taunton.filter.ShowItemFilter</filter-class>
+  </filter>
+  
+<!--   登录界面过滤器
+ --> 
+  <filter>
+	  <filter-name>LoginFilter</filter-name>
+	  <filter-class>com.taunton.filter.LoginFilter</filter-class>
+  </filter>
+
+  
+ <!--  是否登录过滤器 -->
+  <filter>
+	  <filter-name>IsLoginFilter</filter-name>
+	  <filter-class>com.taunton.filter.IsLoginFilter</filter-class>
+  </filter>
+  
+  <!-- 后台用户是否登录过滤器 -->
+   <filter>
+	  <filter-name>BackStageUserIsLoginFilter</filter-name>
+	  <filter-class>com.taunton.filter.BackStageUserIsLoginFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+	  <filter-name>EncodingFilter</filter-name>
+	  <url-pattern>/*</url-pattern>
+	  <dispatcher>REQUEST</dispatcher>
+	  <dispatcher>INCLUDE</dispatcher>
+	  <dispatcher>FORWARD</dispatcher>
+	  <dispatcher>ERROR</dispatcher>
+  </filter-mapping>
+  
+  <filter-mapping>
+	  <filter-name>EncodingFilter</filter-name>
+	  <url-pattern>/backstage/*</url-pattern>
+	  <dispatcher>REQUEST</dispatcher>
+	  <dispatcher>INCLUDE</dispatcher>
+	  <dispatcher>FORWARD</dispatcher>
+	  <dispatcher>ERROR</dispatcher>
+  </filter-mapping>
+  
+
+  <filter-mapping>
+	  <filter-name>LoginFilter</filter-name>
+	  <url-pattern>/jsps/user/login.jsp</url-pattern>
+	  <dispatcher>REQUEST</dispatcher>
+	  <dispatcher>INCLUDE</dispatcher>
+	  <dispatcher>FORWARD</dispatcher>
+	  <dispatcher>ERROR</dispatcher>
+  </filter-mapping>
+
+  <filter-mapping>
+ 	 <filter-name>IsLoginFilter</filter-name>
+	  <url-pattern>/jsps/cart/*</url-pattern>
+	  <dispatcher>REQUEST</dispatcher>
+	  <dispatcher>INCLUDE</dispatcher>
+	  <dispatcher>FORWARD</dispatcher>
+	  <dispatcher>ERROR</dispatcher>
+  </filter-mapping>
+  
+  <filter-mapping>
+	  <filter-name>IsLoginFilter</filter-name>
+	  <url-pattern>/ShoppingCartServlet</url-pattern>
+	  <dispatcher>REQUEST</dispatcher>
+	  <dispatcher>INCLUDE</dispatcher>
+	  <dispatcher>FORWARD</dispatcher>
+	  <dispatcher>ERROR</dispatcher>
+  </filter-mapping>
+  
+  <filter-mapping>
+	  <filter-name>ShowItemFilter</filter-name>
+	  <url-pattern>/jsps/cart/showitem.jsp</url-pattern>
+	  <dispatcher>REQUEST</dispatcher>
+	  <dispatcher>INCLUDE</dispatcher>
+	  <dispatcher>FORWARD</dispatcher>
+	  <dispatcher>ERROR</dispatcher>
+  </filter-mapping>
+  
+    <filter-mapping>
+	  <filter-name>IsLoginFilter</filter-name>
+	  <url-pattern>/jsps/trade/*</url-pattern>
+	  <dispatcher>REQUEST</dispatcher>
+	  <dispatcher>INCLUDE</dispatcher>
+	  <dispatcher>FORWARD</dispatcher>
+	  <dispatcher>ERROR</dispatcher>
+  </filter-mapping>
+  
+    <filter-mapping>
+	  <filter-name>IsLoginFilter</filter-name>
+	  <url-pattern>/TradeServlet</url-pattern>
+	  <dispatcher>REQUEST</dispatcher>
+	  <dispatcher>INCLUDE</dispatcher>
+	  <dispatcher>FORWARD</dispatcher>
+	  <dispatcher>ERROR</dispatcher>
+  </filter-mapping>
+
+    <filter-mapping>
+	  <filter-name>BackStageUserIsLoginFilter</filter-name>
+	  <url-pattern>/adminjsps/admin/*</url-pattern>
+	  <dispatcher>REQUEST</dispatcher>
+	  <dispatcher>INCLUDE</dispatcher>
+	  <dispatcher>FORWARD</dispatcher>
+	  <dispatcher>ERROR</dispatcher>
+  </filter-mapping>
+  
+
+  <error-page>
+	  <error-code>404</error-code>
+	  <location>/error.jsp</location>
+  </error-page> 
+  
+  <!--用来启动 log4jConfigLocation的servlet -->  
+    <servlet>  
+        <servlet-name>Log4JInitServlet</servlet-name>  
+        <servlet-class>com.taunton.servlet.Log4JInitServlet</servlet-class>  
+        <init-param>  
+            <param-name>log4j-properties-location</param-name>  
+            <param-value>/WEB-INF/classes/log4j.properties</param-value>  
+        </init-param>  
+        <load-on-startup>1</load-on-startup>  
+    </servlet>  
+  
+  
+  <welcome-file-list>
+    <welcome-file>enter.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
